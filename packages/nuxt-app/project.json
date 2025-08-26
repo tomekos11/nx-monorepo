@@ -1,0 +1,39 @@
+{
+  "name": "nuxt-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/nuxt-app",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt build",
+        "cwd": "packages/nuxt-app"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt dev",
+        "cwd": "packages/nuxt-app"
+      }
+    },
+    "generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt generate",
+        "cwd": "packages/nuxt-app"
+      }
+    },
+    "preview": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt preview",
+        "cwd": "packages/nuxt-app"
+      },
+      "dependsOn": ["build"]
+    }
+  },
+  "tags": ["type:application", "scope:frontend"],
+  "implicitDependencies": ["shared-types"]
+}

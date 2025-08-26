@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "version": "1.0.0",
+  "description": "Nuxt.js frontend application",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "shared-types": "file:../shared-types",
+    "@nuxt/devtools": "latest",
+    "nuxt": "^3.8.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^3.0.0",
+    "typescript": "~5.8.2",
+    "vue-tsc": "^1.2.0"
+  }
+}
