@@ -1,9 +1,9 @@
 {
-  "extends": "./.nuxt/tsconfig.base.json",
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "shared-types": ["../shared-types/dist/index.d.ts"]
+     "paths": {
+      "@org/types": ["../../../libs/shared/types/src/index.ts"]
     }
   },
   "exclude": ["node_modules"]

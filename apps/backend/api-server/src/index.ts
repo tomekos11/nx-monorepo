@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { Person, PersonResponse } from 'packages/shared-types';
+import { Person, PersonResponse } from '@org/types';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
