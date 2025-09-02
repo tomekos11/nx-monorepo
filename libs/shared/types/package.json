@@ -1,6 +1,6 @@
 {
   "name": "@org/types",
-  "version": "0.0.1",
+  "version": "*",
   "private": true,
   "type": "module",
   "main": "./dist/index.js",
