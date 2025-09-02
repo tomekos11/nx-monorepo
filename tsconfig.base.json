@@ -7,7 +7,9 @@
     "emitDeclarationOnly": true,
     "importHelpers": true,
     "isolatedModules": true,
-    "lib": ["es2022"],
+    "lib": [
+      "es2022"
+    ],
     "module": "node16",
     "moduleResolution": "node16",
     "noEmitOnError": true,
@@ -18,8 +20,5 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "paths": {
-      "shared-types": ["packages/shared-types/dist/index.d.ts"]
-    }
   }
 }

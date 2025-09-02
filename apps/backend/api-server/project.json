@@ -1,0 +1,41 @@
+{
+  "name": "api-server",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/backend/api-server/src",
+  "projectType": "application",
+  "tags": [
+    "type:application",
+    "scope:api"
+  ],
+  "implicitDependencies": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "apps/backend/api-server/dist",
+        "main": "apps/backend/api-server/src/index.ts",
+        "tsConfig": "apps/backend/api-server/tsconfig.json"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node src/index.ts",
+        "cwd": "apps/backend/api-server"
+      }
+    },
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node dist/index.js",
+        "cwd": "apps/backend/api-server"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    }
+  }
+}

@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import type { PersonResponse } from 'shared-types'
+import type { PersonResponse } from 'packages/shared-types'
 
 const config = useRuntimeConfig()
 
