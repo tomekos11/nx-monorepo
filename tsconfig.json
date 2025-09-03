@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/backend/api-server"
+    },
+    {
+      "path": "./apps/backend/graphql"
     }
   ]
 }
